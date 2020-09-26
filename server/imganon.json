@@ -1,0 +1,14 @@
+{
+  "info": "This is how ImgAnon store uploaded images. AbC123 entry is an example.",
+  "AbC123": {
+    "fileId": "ImageKit File ID, string",
+    "url": "Image URL, string",
+    "expire": "Expire when, integer",
+    "height": "Image Height, integer",
+    "width": "Image Width, integer",
+    "size": "Image Size in Byte, integer",
+    "status": "Status from 'What do you think about this image?', string",
+    "protected": "Is password protected?, boolean",
+    "password": "Password, string, NOT SECURE"
+  }
+}
