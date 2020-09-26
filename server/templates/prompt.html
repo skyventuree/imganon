@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<title>ImgAnon - Authentication Required</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>ImgAnon</h2><p>Anonymous & Temporary Solution to Image Upload.</p>
+<hr>
+<p>Please enter password provided by the owner to view this image.</p>
+<form action="/imganon/view/{{shareid}}" method="POST">
+    <label for="password">Password: </label><input type="password" name="password" id="password" placeholder="Password" required>
+    <input type="submit" value="View Image">
+</form>
+{% for message in get_flashed_messages() %}
+    <p>{{ message }}</p>
+{% endfor %}
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

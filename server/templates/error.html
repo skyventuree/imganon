@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<title>Error</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h2>Oops! Something bad actually happened...</h3>
+<p>Something is wrong. Please try again later.
+<br>The following error can help you understand what's actually going on:</p>
+<code>{{error}}</code><br><br>
+<a href="https://skyventuree.github.io/">Back to homepage</a>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

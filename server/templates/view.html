@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<title>ImgAnon - ImageViewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>ImgAnon BETA</h2><p>Anonymous & Temporary Solution to Image Upload.</p>
+<hr>
+<img src="{{imgurl}}" id="result">
+<div>
+{{status}}
+</div>
+<hr>
+<p>Image infomation:</p>
+<p>Dimension: {{width}}x{{height}}</p>
+<p>Size: {{filesize}} bytes</p>
+<p>Expires in: {{expire}}</p>
+<label for="sharelink">Share: </label><input type="text" name="sharelink" id="sharelink" value="https://rouxkarlus.pythonanywhere.com/imganon/view/{{shareid}}">
+<br><hr>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
