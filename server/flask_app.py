@@ -2,6 +2,8 @@ from flask import Flask, redirect, request, render_template, session
 import , os, datetime, time, json, random, string
 import uploader as iau
 
+app = Flask(__name__)
+
 @app.route('/imganon/upload', methods=["POST"])
 def ImgAnonSubmission():
     image = request.files['img']
