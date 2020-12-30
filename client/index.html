@@ -1,22 +1,42 @@
 <!doctype html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<title>ImgAnon</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<br>
-<form action="" method="POST" id="sform" enctype 
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>ImgAnon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <form action="" method="POST" id="sform" enctype 
 ="multipart/form-data">
-  <label for="img">Select image to upload:</label>
-  <input type="file" id="img" name="img" accept="image/*" required><br>
-  <textarea name="status" cols=50 rows=5 placeholder="What do you think about this image?"></textarea>
-  <br><input type="checkbox" id="protected" name="protected"><label for="protected">Password Protected</label>
-  <input type="password" id="password" name="password" placeholder="Password to protect..." style="display:none">
-  <br><input type="submit" value="Upload!">
-</form>
-</body>
-<script src="script.js"></script>
+      <label for="img">Select image to upload:</label>
+      <input 
+        type="file" 
+        id="img" 
+        name="img" 
+        accept="image/*"
+        required>
+      <br>
+      <textarea 
+        name="status"
+        cols=50 
+        rows=5 
+        placeholder="What do you think about this image?"></textarea>
+      <br>
+      <input
+        type="checkbox" 
+        id="protected" 
+        name="protected">
+      <label for="protected">Password Protected</label>
+      <input
+        type = "password" 
+        id = "password" 
+        name = "password" 
+        placeholder = "Password to protect..." 
+        style = "display:none">
+      <br>
+      <input type="submit" value="Upload!">
+    </form>
+  </body>
+  <script src="script.js"></script>
 </html>

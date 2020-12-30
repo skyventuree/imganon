@@ -1,2 +1,3 @@
 $('#protected').click(function() {
-$("#password").toggle(this.checked)});
+    $("#password").toggle(this.checked)
+});
