@@ -1,7 +1,5 @@
 # What's ImgAnon?
 ImgAnon is an re-implentation of Online Image hosting. This project is for the purpose of practicing.
 
-ImgAnon is not intended for general, large audience use as it lacks a lot of security features and open source code structure.
-
-# Can I contribute to this?
-Sure. Fork this repository and you can work on it, then send a PR to the **dev** branch.
+# Before using this:
+I highly against using this tool for public use as it lacks a lot of security features and I'm not willing to fix any of them. Please do not consider making a pull request (if this repository is not achieved.)
